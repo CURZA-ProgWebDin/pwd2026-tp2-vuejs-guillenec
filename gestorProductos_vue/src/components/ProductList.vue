@@ -4,6 +4,8 @@ import ProductItem from "./ProductItem.vue";
 defineProps({
   productos: { type: Array, required: true },
 });
+
+const emit = defineEmits(["delete-item"]);
 </script>
 
 <template>
@@ -18,6 +20,7 @@ defineProps({
         v-for="producto in productos"
         :key="producto.id"
         :producto="producto"
+        @delete-item="$emit('delete-item', $event)"
       />
     </section>
   </div>

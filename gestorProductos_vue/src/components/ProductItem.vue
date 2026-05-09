@@ -2,6 +2,8 @@
 defineProps({
   producto: { type: Object, required: true },
 });
+
+const emit = defineEmits(["delete-item"]);
 </script>
 
 <template>
@@ -16,8 +18,10 @@ defineProps({
       <p class="font-bold text-white">${{ producto.precio }}</p>
       <p class="text-white">Stock: {{ producto.stock }}</p>
     </div>
+    <p class="text-white text-xs">{{ producto.categoria }}</p>
     <button
       class="absolute right-2 w-8 h-8 bg-red-500 rounded flex items-center justify-center hover:bg-red-400 transition ease-in duration-150 text-slate-900"
+      @click="$emit('delete-item', producto.id)"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"

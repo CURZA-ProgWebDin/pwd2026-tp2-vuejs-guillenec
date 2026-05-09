@@ -11,6 +11,8 @@ const errores = ref({
   error_categoria: "",
 });
 
+const emit = defineEmits(["crear-producto"]);
+
 const listaCategorias = [
   { id: 1, nombre: "electronica" },
   { id: 2, nombre: "ropa" },
@@ -64,6 +66,7 @@ const enviar = () => {
     categoria: categoria.value,
   };
   console.log({ objeto });
+  emit("crear-producto", objeto);
 };
 </script>
 
@@ -74,7 +77,6 @@ const enviar = () => {
     <h1 class="text-2xl font-bold">Formulario de Productos</h1>
     <form
       @submit.prevent="enviar"
-      @keydown.enter="enviar"
       class="w-full max-w-md flex flex-col gap-2 p-4 bg-white rounded-2xl shadow-lg shadow-slate-800"
     >
       <label for="nombre" class="font-bold">Nombre del Producto</label>

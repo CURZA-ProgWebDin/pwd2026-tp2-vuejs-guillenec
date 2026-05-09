@@ -1,0 +1,27 @@
+{
+  "workbench.colorTheme": "Tokyo Night Gogh",
+  "window.titleBarStyle": "custom",
+  "window.title": "pwd2026-tp2-vuejs-guillenec ${separator} ${activeEditorShort}",
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "eslint.validate": ["javascript", "vue"],
+  "workbench.colorCustomizations": {
+    "titleBar.activeBackground": "#1c2255",
+    "titleBar.activeForeground": "#f4fff8",
+    "activityBar.background": "#14296c",
+    "statusBar.background": "#15146a",
+    "statusBar.foreground": "#f4fff8"
+  }
+}

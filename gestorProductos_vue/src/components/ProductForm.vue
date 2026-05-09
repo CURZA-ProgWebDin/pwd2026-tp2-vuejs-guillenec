@@ -13,12 +13,6 @@ const errores = ref({
 
 const emit = defineEmits(["crear-producto"]);
 
-const listaCategorias = [
-  { id: 1, nombre: "electronica" },
-  { id: 2, nombre: "ropa" },
-  { id: 3, nombre: "alimentos" },
-];
-
 const validateForm = () => {
   errores.value.error_nombre = "";
   errores.value.error_precio = "";

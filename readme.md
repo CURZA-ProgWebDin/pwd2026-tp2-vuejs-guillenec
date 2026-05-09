@@ -1,5 +1,7 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/MdNm2wHB)
-# 🧩 Trabajo Práctico N°2 : Gestión de Productos (Vuejs) 
+
+# 🧩 Trabajo Práctico N°2 : Gestión de Productos (Vuejs)
+
 ## Capa Vista
 
 ## 🎯 Objetivo
@@ -30,10 +32,12 @@ Implementar un formulario con los siguientes campos:
 - Categoría (select)
 
 Requisitos:
+
 - Validar que los campos no estén vacíos
 - El precio y el stock deben ser valores numéricos válidos
 
 📌 Conceptos:
+
 - `ref`
 - `v-model`
 - Eventos (`@submit`, `@click`)
@@ -57,6 +61,7 @@ Cada producto debe tener la siguiente estructura:
 ```
 
 📌 Importante:
+
 - El `id` debe generarse automáticamente
 - Simular que se está enviando a una capa de negocio (por ejemplo, usando funciones separadas o comentarios claros)
 
@@ -67,6 +72,7 @@ Cada producto debe tener la siguiente estructura:
 Mostrar todos los productos en una lista o tabla.
 
 📌 Conceptos:
+
 - `reactive`
 - `v-for`
 - `:key` obligatorio
@@ -78,10 +84,12 @@ Mostrar todos los productos en una lista o tabla.
 Cada producto debe tener un botón para eliminarlo.
 
 📌 Conceptos:
+
 - `emits`
 - Manejo de eventos desde componentes hijos
 
 ---
+
 ### 5. Filtrar productos
 
 Agregar un filtro que permita:
@@ -90,6 +98,7 @@ Agregar un filtro que permita:
 - Filtrar por categoría
 
 📌 Conceptos:
+
 - `computed`
 
 ---
@@ -99,9 +108,10 @@ Agregar un filtro que permita:
 Mostrar:
 
 - Cantidad total de productos
-- Valor total del inventario (precio * stock)
+- Valor total del inventario (precio \* stock)
 
 📌 Conceptos:
+
 - `computed`
 
 ---
@@ -116,6 +126,7 @@ Separar la aplicación en componentes:
 - `ProductItem.vue` → Producto individual
 
 📌 Requisitos:
+
 - Uso obligatorio de `props`
 - Uso obligatorio de `emits`
 - No mutar props directamente
